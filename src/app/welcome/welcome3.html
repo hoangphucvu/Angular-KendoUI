@@ -1,0 +1,13 @@
+<h2>Welcome 3</h2>
+<div ng-controller="welcome3 as vm">
+    Hello
+    <br/>
+    <select kendo-drop-down-list
+            k-options="vm.computerOptions"
+            k-on-change="vm.computerChange(kendoEvent)"
+            ng-model="vm.selectedComputer">
+    </select>
+    <div id="choice">
+        You chose {{vm.selectedComputer}}
+    </div>
+</div>

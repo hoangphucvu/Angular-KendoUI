@@ -5,10 +5,12 @@
     'use strict';
 
     angular.module('app')
-        .controller('welcome2', [welcome2]);
+        .controller('welcome3', [welcome3]);
 
-    function welcome2() {
+    function welcome3() {
         var vm = this;
+        vm.computerChosen = false;
+        vm.selectedComputer ="";
         vm.activate = activate;
         activate();
 
@@ -30,6 +32,14 @@
                 dataValueField: 'id',
                 optionLabel: 'Select a computer...'
             };
+
+            vm.computerChange - function(e){
+                console.log(e.sender.text());
+                vm.computerChange = true;
+                if(e.sender.text === "Select a computer ...."){
+                    vm.computerChosen =false;
+                }
+            }
         }
     }
 })();
