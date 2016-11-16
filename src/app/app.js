@@ -17,6 +17,7 @@
    app.config(['$routeProvider', function($routeProvider) {
       $routeProvider
          .when('/', { templateUrl: 'app/welcome/welcome.html' })
+          .when('/welcome2', { templateUrl: 'app/welcome/welcome2.html' })
           .otherwise({ redirectTo: '/' }); // go to the welcome page
    }
    ]);
