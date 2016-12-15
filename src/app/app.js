@@ -20,6 +20,7 @@
             .when('/welcome2', {templateUrl: 'app/welcome/welcome2.html'})
             .when('/welcome3', {templateUrl: 'app/welcome/welcome3.html'})
             .when('/modal', {templateUrl: 'app/modal/modal.html'})
+            .when('/dataSource', {templateUrl: 'app/dataSource/dataSource.html'})
             .otherwise({redirectTo: '/'}); // go to the welcome page
     }
     ]);
